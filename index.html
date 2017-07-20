@@ -1,5 +1,7 @@
 ---
-layout: default
+layout: index
+title: CS Learning
+sub: Trying to explain things simply and clearly
 ---
 
 <section>
@@ -18,7 +20,7 @@ layout: default
 		<ul>
 			<li>
 				<div class="post-date">
-					<span>{{ post.date | date: "%b %d" }}</span>
+					<time>{{ post.date | date: "%B %-d, %Y" }}</time>
 				</div>
 				<div class="title">
 					<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -29,3 +31,4 @@ layout: default
 	{% endfor %}
 
 </section>
+<script id="dsq-count-scr" src="//cslearningtx.disqus.com/count.js" async></script>
