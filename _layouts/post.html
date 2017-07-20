@@ -16,6 +16,7 @@ layout: default
 
 	<div class="center">
 		<h1><a href="http://github.com/cslearningtx/" target = "_blank"><img src="http://i.imgur.com/aV59QS6.png (github icon with padding)" alt="alt text" /></a>     <a href="#share"><img src="http://i.imgur.com/GE4GmC3.png (share icon with padding)" alt="alt text" /></a></h1>
+		<h1 class="title">{{ page.title }}</h1>
 		<time>{{ page.date | date: '%B %-d, %Y' }}</time>
 	</div>
 
@@ -34,7 +35,7 @@ layout: default
 </aside>
 {% endif %}
 {% if page.next.url %}
-<aside class="back">
+<aside class="next">
 <a href="{{ page.next.url }}">{{page.next.title}} &raquo;</a>
 {% endif %}
 
